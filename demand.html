@@ -29,7 +29,7 @@
     <!-- ========= CSS ========= -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
         integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-        <link href='https://fonts.googleapis.com/css?family=Caveat Brush' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Caveat Brush' rel='stylesheet'>
     <link rel="stylesheet" href="css/main.css">
 </head>
 
@@ -45,40 +45,11 @@
                 <li class="nav-item">
                     <a class="nav-link" href="index.html"><i class="fas fa-home"></i> Home</a>
                 </li>
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#supply.html" id="supplyDropdown" role="button"
-                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
-                        <i class="fas fa-chart-line"></i> Supply Map
-                    </a>
-                    <div class="dropdown-menu bg-secondary navbar-dropdown" aria-labelledby="supplyDropdown">
-                        <nav class="sidebar">
-                            <ul class="nav flex-column">
-                                <li class="nav-item">
-                                    <a class="nav-link" data-scroll="supply1" href="supply.html#supply1">
-                                        Number of Eggs Available per Person, per Year
-                                    </a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" data-scroll="supply2" href="supply.html#supply2">
-                                        Number of Eggs Produced per Year in the Country
-                                    </a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" data-scroll="supply3" href="supply.html#supply3">
-                                        Imports and Exports of Shell Eggs and Egg Powder per Year
-                                    </a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" data-scroll="supply4" href="supply.html#supply4">
-                                        Producer Price of a Single Egg
-                                    </a>
-                                </li>
-                            </ul>
-                        </nav>
-                    </div>
+                <li class="nav-item">
+                    <a class="nav-link" href="supply.html"><i class="fas fa-chart-line"></i> Supply Map</a>
                 </li>
                 <li class="nav-item dropdown active">
-                    <a class="nav-link dropdown-toggle" href="#supply.html" id="demandDropdown" role="button"
+                    <a class="nav-link dropdown-toggle" href="demand.html" id="demandDropdown" role="button"
                         data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
                         <i class="fas fa-chart-pie"></i> Demand Map<span class="sr-only">(current)</span>
                     </a>
@@ -157,7 +128,7 @@
     </nav>
 </header>
 
-<header>
+<header class="d-none d-md-block">
     <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
         <a class="navbar-brand" href="#">Sight & Life</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#headerNavbar"

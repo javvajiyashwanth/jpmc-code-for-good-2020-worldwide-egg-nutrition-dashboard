@@ -24,8 +24,10 @@ header .navbar {
     z-index: 1000;
 }
 
-header .transparent {
-    background: transparent!important;
+@media (min-width: 768px) {
+    header .transparent {
+        background: transparent!important;
+    }
 }
 
 .navbar-brand {
@@ -387,6 +389,7 @@ header .transparent {
 
 #contactUsContent .content li {
     margin: 5px;
+    display: inline-block;
 }
 
 #contactUsContent .content i {
@@ -430,7 +433,7 @@ header .transparent {
         text-align: center;
     }
     #contactUsContent .content #contactProfiles li {
-        margin-left: -25px;
+        margin-left: -30px;
     }
 }
 

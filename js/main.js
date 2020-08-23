@@ -1,16 +1,11 @@
 $(document).ready(() => {
-    $(function () {
-        var $nav = $("header .navbar");
-        if ($(this).scrollTop() > $nav.height()) {
-            $nav.removeClass('transparent');
-        } else {
-            $nav.addClass('transparent');
-        }
+    $(document).click(function(event) {
+        $('.navbar-collapse').collapse('hide');
     });
 
     $(function () {
         $(document).scroll(function () {
-            var $nav = $("header .navbar");
+            var $nav = $("#index .navbar");
             var $top = $("#backToTopButton");
             console.log($top);
             if ($(this).scrollTop() > $nav.height()) {
