@@ -1,0 +1,458 @@
+<!DOCTYPE html>
+<!-- ========= Document language ========= -->
+<html lang="en">
+
+<head>
+    <!-- ========= Meta Data ========= -->
+    <!-- Document character set -->
+    <meta charset="utf-8">
+    <!-- Document view port configuration -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Document content type. -->
+    <meta http-equiv="Content-Type" content="text/html">
+    <!-- Important keywords related to the document. -->
+    <meta name="keywords" content="jpmc, cfg, codeforgood, sightandlife, team3, 2020">
+    <!-- Short description about the document. -->
+    <meta name="description"
+        content="Sight and Life is a humanitarian nutrition think tank working to innovate in nutrition towards eradicating all forms of malnutrition.">
+    <!-- Author name. -->
+    <meta name="author" content="Team-3 CodeForGood-2020">
+    <!-- Application name -->
+    <meta name="application-name" content="Sight and Life">
+
+    <!-- ========= Document title ========= -->
+    <title>Supply Map</title>
+
+    <!-- ========= Favicon ========= -->
+    <link class="rounded" rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+
+    <!-- ========= CSS ========= -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+        <link href='https://fonts.googleapis.com/css?family=Caveat Brush' rel='stylesheet'>
+    <link rel="stylesheet" href="css/main.css">
+</head>
+
+<header class="d-block d-md-none">
+    <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+        <a class="navbar-brand" href="#">Sight & Life</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#headerNavbar"
+            aria-controls="headerNavbar" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="headerNavbar">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html"><i class="fas fa-home"></i> Home</a>
+                </li>
+                <li class="nav-item dropdown active">
+                    <a class="nav-link dropdown-toggle" href="#supply.html" id="supplyDropdown" role="button"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                        <i class="fas fa-chart-line"></i> Supply Map<span class="sr-only">(current)</span>
+                    </a>
+                    <div class="dropdown-menu bg-secondary navbar-dropdown" aria-labelledby="supplyDropdown">
+                        <nav class="sidebar" id="sideNavBar">
+                            <ul class="nav flex-column">
+                                <li class="nav-item">
+                                    <a class="nav-link" data-scroll="supply1" href="#supply1">
+                                        Number of Eggs Available per Person, per Year
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" data-scroll="supply2" href="#supply2">
+                                        Number of Eggs Produced per Year in the Country
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" data-scroll="supply3" href="#supply3">
+                                        Imports and Exports of Shell Eggs and Egg Powder per Year
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" data-scroll="supply4" href="#supply4">
+                                        Producer Price of a Single Egg
+                                    </a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#supply.html" id="demandDropdown" role="button"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                        <i class="fas fa-chart-pie"></i> Demand Map
+                    </a>
+                    <div class="dropdown-menu bg-secondary navbar-dropdown" aria-labelledby="demandDropdown">
+                        <nav class="sidebar">
+                            <ul class="nav flex-column">
+                                <li class="nav-item">
+                                    <a class="nav-link" data-scroll="demand1" href="demand.html#demand1">
+                                        Total Population
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" data-scroll="demand2" href="demand.html#demand2">
+                                        Malnutrition Data
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" data-scroll="demand3" href="demand.html#demand3">
+                                        Protein Consumption
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" data-scroll="demand4" href="demand.html#demand4">
+                                        Egg Consumption per Person, per Year
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" data-scroll="demand5" href="demand.html#demand5">
+                                        Retail Price of a Single Egg (in USD)
+                                    </a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                </li>
+                <li>
+                    <div class="row no-gutters justify-content-around text-center py-2" id="quickLinks">
+                        <div class="col">
+                            <span class="fa-stack fa-lg" onclick="location.href='index.html'">
+                                <i class="fa fa-square fa-stack-2x" style="color: #000000;"></i>
+                                <i class="fas fa-home fa-stack-1x fa-inverse"></i>
+                            </span>
+                            <span class="fa-stack fa-lg" onclick="location.href='supply.html'">
+                                <i class="fa fa-square fa-stack-2x" style="color: #000000;"></i>
+                                <i class="fas fa-chart-line fa-stack-1x fa-inverse"></i>
+                            </span>
+                            <span class="fa-stack fa-lg" onclick="location.href='demand.html'">
+                                <i class="fa fa-square fa-stack-2x" style="color: #000000;"></i>
+                                <i class="fas fa-chart-pie fa-stack-1x fa-inverse"></i>
+                            </span>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="row no-gutters justify-content-around text-center py-2" id="socialProfiles">
+                        <div class="col">
+                            <span class="fa-stack fa-lg"
+                                onclick="location.href='https://www.facebook.com/SightandLife/'">
+                                <i class="fa fa-square fa-stack-2x" style="color: #000000;"></i>
+                                <i class="fab fa-facebook-f fa-stack-1x fa-inverse"></i>
+                            </span>
+                            <span class="fa-stack fa-lg" onclick="location.href='https://twitter.com/SightandLife'">
+                                <i class="fa fa-square fa-stack-2x" style="color: #000000;"></i>
+                                <i class="fab fa-instagram fa-stack-1x fa-inverse"></i>
+                            </span>
+                            <span class="fa-stack fa-lg"
+                                onclick="location.href='https://www.instagram.com/sightandlife/'">
+                                <i class="fa fa-square fa-stack-2x" style="color: #000000;"></i>
+                                <i class="fab fa-twitter fa-stack-1x fa-inverse"></i>
+                            </span>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </nav>
+</header>
+
+<header class="d-none d-md-block">
+    <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+        <a class="navbar-brand" href="#">Sight & Life</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#headerNavbar"
+            aria-controls="headerNavbar" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="headerNavbar">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html"><i class="fas fa-home"></i> Home</a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="supply.html"><i class="fas fa-chart-line"></i> Supply Map<span
+                            class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="demand.html"><i class="fas fa-chart-pie"></i> Demand Map</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+</header>
+
+<body>
+    <div class="container-fluid p-0">
+        <div class="d-flex">
+            <div class="d-none d-md-block" id="sideNav">
+                <div class="d-flex flex-column h-100">
+                    <div class="mb-auto" style="flex-grow: 1; overflow-y: auto; overflow-x: hidden;">
+                        <nav class="sidebar" id="sideNavBar">
+                            <ul class="nav flex-column">
+                                <li class="nav-item">
+                                    <a class="nav-link" data-scroll="supply1" href="#supply1">
+                                        Number of Eggs Available per Person, per Year
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" data-scroll="supply2" href="#supply2">
+                                        Number of Eggs Produced per Year in the Country
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" data-scroll="supply3" href="#supply3">
+                                        Imports and Exports of Shell Eggs and Egg Powder per Year
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" data-scroll="supply4" href="#supply4">
+                                        Producer Price of a Single Egg
+                                    </a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                    <div class="row no-gutters justify-content-around text-center py-2" id="quickLinks">
+                        <div class="col">
+                            <span class="fa-stack fa-lg" onclick="location.href='index.html'">
+                                <i class="fa fa-square fa-stack-2x" style="color: #000000;"></i>
+                                <i class="fas fa-home fa-stack-1x fa-inverse"></i>
+                            </span>
+                            <span class="fa-stack fa-lg" onclick="location.href='supply.html'">
+                                <i class="fa fa-square fa-stack-2x" style="color: #000000;"></i>
+                                <i class="fas fa-chart-line fa-stack-1x fa-inverse"></i>
+                            </span>
+                            <span class="fa-stack fa-lg" onclick="location.href='demand.html'">
+                                <i class="fa fa-square fa-stack-2x" style="color: #000000;"></i>
+                                <i class="fas fa-chart-pie fa-stack-1x fa-inverse"></i>
+                            </span>
+                        </div>
+                    </div>
+                    <div class="row no-gutters justify-content-around text-center py-2" id="socialProfiles">
+                        <div class="col">
+                            <span class="fa-stack fa-lg"
+                                onclick="location.href='https://www.facebook.com/SightandLife/'">
+                                <i class="fa fa-square fa-stack-2x" style="color: #000000;"></i>
+                                <i class="fab fa-facebook-f fa-stack-1x fa-inverse"></i>
+                            </span>
+                            <span class="fa-stack fa-lg" onclick="location.href='https://twitter.com/SightandLife'">
+                                <i class="fa fa-square fa-stack-2x" style="color: #000000;"></i>
+                                <i class="fab fa-instagram fa-stack-1x fa-inverse"></i>
+                            </span>
+                            <span class="fa-stack fa-lg"
+                                onclick="location.href='https://www.instagram.com/sightandlife/'">
+                                <i class="fa fa-square fa-stack-2x" style="color: #000000;"></i>
+                                <i class="fab fa-twitter fa-stack-1x fa-inverse"></i>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="d-none d-md-block" id="sideNavToggler">
+                <div>
+                    <i class="fas fa-list-alt fa-2x" type="button" id="sideNavTogglerButton"></i>
+                </div>
+            </div>
+            <div class="bg-dark text-center" id="mainSection" data-spy="scroll" data-target="#sideNavBar">
+                <div class="px-5 pb-5">
+                    <div class="row justify-content-around">
+                        <div class="col">
+                            <div class="row mainSectionContent" id="supply1">
+                                <div class="card">
+                                    <div class="card-header">
+                                        <h4>Number of Eggs Available per Person, per Year</h4>
+                                    </div>
+                                    <div class="card-body">
+                                        <div class='tableauPlaceholder' id='viz1597572856731'
+                                            style='position: relative;'>
+                                            <noscript>
+                                                <a href='#'>
+                                                    <img alt=' '
+                                                        src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;CF&#47;CFG2020&#47;Sheet2&#47;1_rss.png'
+                                                        style='border: none' />
+                                                </a>
+                                            </noscript>
+                                            <object class='tableauViz' style='display: none;'>
+                                                <param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' />
+                                                <param name='embed_code_version' value='3' />
+                                                <param name='site_root' value='' />
+                                                <param name='name' value='CFG2020&#47;Sheet2' />
+                                                <param name='tabs' value='no' />
+                                                <param name='toolbar' value='yes' />
+                                                <param name='static_image'
+                                                    value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;CF&#47;CFG2020&#47;Sheet2&#47;1.png' />
+                                                <param name='animate_transition' value='yes' />
+                                                <param name='display_static_image' value='yes' />
+                                                <param name='display_spinner' value='yes' />
+                                                <param name='display_overlay' value='yes' />
+                                                <param name='display_count' value='yes' />
+                                                <param name='language' value='en' />
+                                                <param name='filter' value='publish=yes' />
+                                            </object>
+                                        </div>
+                                        <script type='text/javascript'>
+                                            var divElement = document.getElementById('viz1597572856731');
+                                            var vizElement = divElement.getElementsByTagName('object')[0];
+                                            vizElement.style.width = '100%';
+                                            vizElement.style.height = (divElement.offsetWidth * 0.75) + 'px';
+                                            var scriptElement = document.createElement('script');
+                                            scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';
+                                            vizElement.parentNode.insertBefore(scriptElement, vizElement);
+                                        </script>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row mainSectionContent" id="supply2">
+                                <div class="card">
+                                    <div class="card-header">
+                                        <h4>Number of Eggs Produced per Year in the Country</h4>
+                                    </div>
+                                    <div class="card-body">
+                                        <div class='tableauPlaceholder' id='viz1597574529204'
+                                            style='position: relative;'>
+                                            <noscript>
+                                                <a href='#'>
+                                                    <img alt=' '
+                                                        src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Nu&#47;NumberofeggsproducedperyearinthecountryVolumeandValue&#47;Sheet1&#47;1_rss.png'
+                                                        style='border: none' />
+                                                </a>
+                                            </noscript>
+                                            <object class='tableauViz' style='display: none;'>
+                                                <param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' />
+                                                <param name='embed_code_version' value='3' />
+                                                <param name='path'
+                                                    value='views&#47;NumberofeggsproducedperyearinthecountryVolumeandValue&#47;Sheet1?:language=en&amp;:embed=y&amp;:display_count=y&amp;publish=yes' />
+                                                <param name='toolbar' value='yes' />
+                                                <param name='static_image'
+                                                    value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Nu&#47;NumberofeggsproducedperyearinthecountryVolumeandValue&#47;Sheet1&#47;1.png' />
+                                                <param name='animate_transition' value='yes' />
+                                                <param name='display_static_image' value='yes' />
+                                                <param name='display_spinner' value='yes' />
+                                                <param name='display_overlay' value='yes' />
+                                                <param name='display_count' value='yes' />
+                                                <param name='language' value='en' />
+                                                <param name='filter' value='publish=yes' />
+                                            </object>
+                                        </div>
+                                        <script type='text/javascript'>
+                                            var divElement = document.getElementById('viz1597574529204');
+                                            var vizElement = divElement.getElementsByTagName('object')[0];
+                                            vizElement.style.width = '100%';
+                                            vizElement.style.height = (divElement.offsetWidth * 0.75) + 'px';
+                                            var scriptElement = document.createElement('script');
+                                            scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';
+                                            vizElement.parentNode.insertBefore(scriptElement, vizElement);
+                                        </script>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row mainSectionContent" id="supply3">
+                                <div class="card">
+                                    <div class="card-header">
+                                        <h4>Imports and Exports of Shell Eggs and Egg Powder per Year</h4>
+                                    </div>
+                                    <div class="card-body">
+                                        <div class='tableauPlaceholder' id='viz1597576680911'
+                                            style='position: relative;'>
+                                            <noscript>
+                                                <a href='#'>
+                                                    <img alt=' '
+                                                        src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Im&#47;ImportExportofEggShells&#47;Sheet2&#47;1_rss.png'
+                                                        style='border: none' />
+                                                </a>
+                                            </noscript>
+                                            <object class='tableauViz' style='display: none;'>
+                                                <param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' />
+                                                <param name='embed_code_version' value='3' />
+                                                <param name='site_root' value='' />
+                                                <param name='name' value='ImportExportofEggShells&#47;Sheet2' />
+                                                <param name='tabs' value='no' />
+                                                <param name='toolbar' value='yes' />
+                                                <param name='static_image'
+                                                    value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Im&#47;ImportExportofEggShells&#47;Sheet2&#47;1.png' />
+                                                <param name='animate_transition' value='yes' />
+                                                <param name='display_static_image' value='yes' />
+                                                <param name='display_spinner' value='yes' />
+                                                <param name='display_overlay' value='yes' />
+                                                <param name='display_count' value='yes' />
+                                                <param name='language' value='en' />
+                                                <param name='filter' value='publish=yes' />
+                                            </object>
+                                        </div>
+                                        <script type='text/javascript'>
+                                            var divElement = document.getElementById('viz1597576680911');
+                                            var vizElement = divElement.getElementsByTagName('object')[0];
+                                            vizElement.style.width = '100%';
+                                            vizElement.style.height = (divElement.offsetWidth * 0.75) + 'px';
+                                            var scriptElement = document.createElement('script');
+                                            scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';
+                                            vizElement.parentNode.insertBefore(scriptElement, vizElement);
+                                        </script>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row mainSectionContent" id="supply4">
+                                <div class="card">
+                                    <div class="card-header">
+                                        <h4>Producer Price of a Single Egg</h4>
+                                    </div>
+                                    <div class="card-body">
+                                        <div class='tableauPlaceholder' id='viz1597572726475'
+                                            style='position: relative;'>
+                                            <noscript>
+                                                <a href='#'>
+                                                    <img alt=' '
+                                                        src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Pr&#47;ProducerPriceofSingleEggin&#47;Sheet1&#47;1_rss.png'
+                                                        style='border: none' />
+                                                </a>
+                                            </noscript>
+                                            <object class='tableauViz' style='display: none;'>
+                                                <param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' />
+                                                <param name='embed_code_version' value='3' />
+                                                <param name='site_root' value='' />
+                                                <param name='name' value='ProducerPriceofSingleEggin&#47;Sheet1' />
+                                                <param name='tabs' value='no' />
+                                                <param name='toolbar' value='yes' />
+                                                <param name='static_image'
+                                                    value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Pr&#47;ProducerPriceofSingleEggin&#47;Sheet1&#47;1.png' />
+                                                <param name='animate_transition' value='yes' />
+                                                <param name='display_static_image' value='yes' />
+                                                <param name='display_spinner' value='yes' />
+                                                <param name='display_overlay' value='yes' />
+                                                <param name='display_count' value='yes' />
+                                                <param name='language' value='en' />
+                                                <param name='filter' value='publish=yes' />
+                                            </object>
+                                        </div>
+                                        <script type='text/javascript'>
+                                            var divElement = document.getElementById('viz1597572726475');
+                                            var vizElement = divElement.getElementsByTagName('object')[0];
+                                            vizElement.style.width = '100%';
+                                            vizElement.style.height = (divElement.offsetWidth * 0.75) + 'px';
+                                            var scriptElement = document.createElement('script');
+                                            scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';
+                                            vizElement.parentNode.insertBefore(scriptElement, vizElement);
+                                        </script>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/0cb34f0fb6.js" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="js/main.js"></script>
+</body>
+
+</html>
