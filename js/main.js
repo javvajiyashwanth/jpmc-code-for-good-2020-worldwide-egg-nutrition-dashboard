@@ -11,10 +11,14 @@ $(document).ready(() => {
     $(function () {
         $(document).scroll(function () {
             var $nav = $("header .navbar");
+            var $top = $("#backToTopButton");
+            console.log($top);
             if ($(this).scrollTop() > $nav.height()) {
                 $nav.removeClass('transparent');
+                $top.css('display', 'block');
             } else {
                 $nav.addClass('transparent');
+                $top.css('display', 'none');
             }
         });
     });
