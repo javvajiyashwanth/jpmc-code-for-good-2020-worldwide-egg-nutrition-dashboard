@@ -49,10 +49,10 @@ $(document).ready(() => {
                 var id = $(this).attr('id'),
                     offset = $(this).offset().top,
                     height = $(this).height();
+                    $('#sideNavBar').find('[data-scroll="' + id + '"]').removeClass('active');
                 if ((sTop + 60 >= offset) && ((offset < 0) ? (Math.abs(offset - 55) <= height / 2) : (offset < height))) {
-                    link.removeClass('active');
                     $('#sideNavBar').find('[data-scroll="' + id + '"]').addClass('active');
-                    return false;
+                    return;
                 }
             });
         }
