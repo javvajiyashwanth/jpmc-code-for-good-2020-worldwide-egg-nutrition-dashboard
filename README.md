@@ -1,5 +1,5 @@
-# Sight & Life
-Sight and Life is a humanitarian nutrition think tank working to innovate in nutrition towards eradicating all forms of malnutrition. This project was developed by Team-3 for CodeForGood-2020 and is focused on creating a web-based platform for visualizing the supply and demand of eggs in a particular country.
+# Sight & Life Foundation
+Sight and Life Foundation is a humanitarian nutrition think tank working to innovate in nutrition towards eradicating all forms of malnutrition. This project was developed by Team-3 for CodeForGood-2020 and is focused on creating a web-based platform for visualizing the supply and demand of eggs in a particular country.
 
 ## Getting Started
 - Clone the repository to your local machine.
@@ -12,3 +12,4 @@ Sight and Life is a humanitarian nutrition think tank working to innovate in nut
 - HTML
 - CSS
 - JavaScript
+- Tableau
